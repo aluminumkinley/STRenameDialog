@@ -5,11 +5,10 @@
     android:layout_height="wrap_content"
     android:layout_centerHorizontal="true"
     android:id="@+id/dialog_bg"
+    android:background="@drawable/rename_linearlayout_bg"
     android:paddingTop="15dp"
     android:paddingLeft="20dp"
     android:paddingRight="20dp"
-
-
     >
 
     <LinearLayout
@@ -30,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="@drawable/rename_linearlayout_bg"
+        android:background="@drawable/rename_edittext_bg"
         android:padding="5dp"
         android:weightSum="10"
         android:layout_marginBottom="5dp"
@@ -95,12 +94,15 @@
             android:layout_height="wrap_content"
             />
     </LinearLayout>
+    <View
+        android:id="@+id/gap_between_layout"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
 
     <LinearLayout
         android:id="@+id/button_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
         >
@@ -109,7 +111,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="CANCEL"
-            android:textStyle="bold"
+            android:textStyle="normal"
             />
         <View
             android:id="@+id/button_gap"
@@ -120,7 +122,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="RENAME"
-            android:textStyle="bold"
+            android:textStyle="normal"
             />
 
     </LinearLayout>
